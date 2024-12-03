@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.content {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.2s ease-in-out;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+input:hover, select:hover, textarea:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Plan Cards */
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plan h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.plan button {
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed; /* Fija el footer al final de la pantalla */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0;
+    width: 100%; /* Asegura que abarque todo el ancho de la pantalla */
+    font-size: 14px;
+    z-index: 10; /* Garantiza que esté sobre otros elementos */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
